@@ -1,11 +1,21 @@
 class Main {
   public static void main(String[] args) {
+  
+    Animal[] estimacao = Animal.values();
 
-      Animal seuDono = Animal.CACHORRO;
+    for(int i = 0; i < estimacao.length; i++){
+        System.out.println(estimacao[i]);
+    }
 
-      System.out.println(seuDono.name() + " é o animal de " + seuDono.getDono());
+    Animal test = Enum.valueOf(Animal.class, "CACHORRO");
+    System.out.println(test);
+        
+        // Animal seuDono = Animal.CACHORRO;
+
+       //System.out.println(seuDono.name() + " é o animal de " + seuDono.getDono());
 
       // usandoEnum();
+    
   }
 
 //   static void usandoEnum(){
