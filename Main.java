@@ -15,6 +15,9 @@ class Main {
        //System.out.println(seuDono.name() + " é o animal de " + seuDono.getDono());
 
       // usandoEnum();
+	  for(TipoAnimal doc : TipoAnimal.values()){
+			System.out.println(doc + " - "+ doc.gerar());
+		}
     
   }
 
@@ -63,7 +66,5 @@ class Main {
 //         break;            
 //     }
 //   }
-  for(TipoAnimal doc : TipoAnimal.values()){
-			System.out.println(doc + " - "+ doc.gerar());
-		}
+  
 }
