@@ -63,5 +63,7 @@ class Main {
 //         break;            
 //     }
 //   }
-  
+  for(TipoAnimal doc : TipoAnimal.values()){
+			System.out.println(doc + " - "+ doc.gerar());
+		}
 }
